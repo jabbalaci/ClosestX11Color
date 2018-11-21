@@ -12,3 +12,8 @@ Screenshots:
 <p align="center">
   <img width="60%" src="assets/ss2.png">
 </p>
+
+Links
+-----
+
+Color data is from [https://jonasjacek.github.io/colors/](https://jonasjacek.github.io/colors/).
