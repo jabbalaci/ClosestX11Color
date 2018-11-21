@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+"""
+Input: an arbitrary HTML hexa code color.
+Output: the closest X11 color from the range 0 .. 255 (included).
+
+Author: Laszlo Szathmary (jabba.laci@gmail.com), 2018
+GitHub: https://github.com/jabbalaci/ClosestX11Color
+"""
+
 import sys
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox
