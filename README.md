@@ -6,9 +6,9 @@ Find the closest X11 color (between 0 and 255) to an HTML hexa color (e.g. #ABCD
 Screenshots:
 
 <p align="center">
-  <img src="assets/ss1.png">
+  <img width="60%" src="assets/ss1.png">
 </p>
 
 <p align="center">
-  <img src="assets/ss2.png">
+  <img width="60%" src="assets/ss2.png">
 </p>
