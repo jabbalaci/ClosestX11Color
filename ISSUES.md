@@ -7,3 +7,6 @@ Known issues / ideas
 * Move "Message" to the statusbar.
 
 * put everything in a virt. env.
+
+* Show not only one similar color, but the three most similar ones
+  in descending order.
