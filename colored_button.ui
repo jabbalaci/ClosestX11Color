@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Closest X11 Color</string>
+   <string>Closest Xterm-256 Color</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="colorButton">
@@ -51,14 +51,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>486</x>
       <y>100</y>
-      <width>211</width>
+      <width>261</width>
       <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string>Closest X11 color (0..255):</string>
+     <string>Closest xterm-256 color (0..255):</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">

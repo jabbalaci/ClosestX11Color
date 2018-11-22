@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
         self.okButton.setGeometry(QtCore.QRect(670, 20, 107, 30))
         self.okButton.setObjectName("okButton")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(500, 100, 211, 18))
+        self.label.setGeometry(QtCore.QRect(486, 100, 261, 18))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(20, 530, 81, 18))
@@ -71,10 +71,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Closest X11 Color"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Closest Xterm-256 Color"))
         self.colorButton.setText(_translate("MainWindow", "Color"))
         self.okButton.setText(_translate("MainWindow", "OK"))
-        self.label.setText(_translate("MainWindow", "Closest X11 color (0..255):"))
+        self.label.setText(_translate("MainWindow", "Closest xterm-256 color (0..255):"))
         self.label_2.setText(_translate("MainWindow", "Message:"))
         self.hexColor.setPlaceholderText(_translate("MainWindow", "#ABCDEF"))
         self.pasteButton.setText(_translate("MainWindow", "Paste"))
