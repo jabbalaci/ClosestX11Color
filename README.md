@@ -32,8 +32,10 @@ Links and Related Works
 -----------------------
 
 * Color data is from [https://jonasjacek.github.io/colors/](https://jonasjacek.github.io/colors/).
+* [reddit discussion](https://old.reddit.com/r/commandline/comments/9zbh4y/i_wrote_a_gui_app_that_helps_you_write_nicer_cli/)
 * [nearest](http://dpaste.com//3BW2ZCR), written in Perl, does something similar in the command-line
-* [list of terminals](https://metacpan.org/pod/Term::ExtendedColor#NOTES) that support xterm-256 colors (spoiler: most of them do)
+* [list of terminals](https://metacpan.org/pod/Term::ExtendedColor#NOTES) that support xterm-256 colors
+  (spoiler: most of them do)
 * [colorpalette](https://github.com/makkoncept/colorpalette) extracts palette of dominating colors from an image
   (it's a great way to find nice colors)
 * [Colorfy](https://github.com/davidkrantz/Colorfy) analyzes an image and computes the correct background color
