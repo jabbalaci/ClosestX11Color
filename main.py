@@ -9,11 +9,14 @@ GitHub: https://github.com/jabbalaci/ClosestX11Color
 """
 
 import sys
+from typing import Set
+
 from PyQt5 import QtGui
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QPushButton
+
+import dist
 import helper
 import showMainGui
-import dist
 
 
 class Main(QMainWindow, showMainGui.Ui_MainWindow):
@@ -25,6 +28,7 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         self.hexColor.returnPressed.connect(self.set_color)
         self.okButton.clicked.connect(self.set_color)
         self.pasteButton.clicked.connect(self.paste_text)
+        self.whites: Set[int] = helper.get_white_color_codes()
 
     def paste_text(self):
         self.hexColor.setText(helper.get_text_from_clipboard())
@@ -46,13 +50,15 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         self.messageLabel.setText("")
         (r, g, b) = helper.hex_to_rgb(hex_value)
         closest = dist.find_closest_color((r, g, b))
+        xterm_number = closest['xterm_number']
         # print(closest)
+        btn_text_color = "white" if int(xterm_number) in self.whites else "black"
         result = closest['hex_str']    # includes the leading '#' sign
-        self.originalColorButton.setStyleSheet(f"background-color: #{hex_value}; border: none;");
+        self.originalColorButton.setStyleSheet(f"background-color: #{hex_value}; color: {btn_text_color}; border: none;");
         self.originalColorButton.setText(f"#{hex_value}")
         #
-        self.colorButton.setStyleSheet(f"background-color: {result}; border: none;");
-        self.colorButton.setText(closest['xterm_number'])
+        self.colorButton.setStyleSheet(f"background-color: {result}; color: {btn_text_color}; border: none;");
+        self.colorButton.setText(xterm_number)
         text = ""
         for k, v in closest.items():
             text += (f"<b>{k}:</b> {v}<br>")
