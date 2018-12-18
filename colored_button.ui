@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="colorButton">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>130</y>
-      <width>350</width>
-      <height>201</height>
+      <x>20</x>
+      <y>220</y>
+      <width>221</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="font">
@@ -32,7 +32,7 @@
      <string notr="true">background-color: rgb(46, 204, 113); border: none;</string>
     </property>
     <property name="text">
-     <string>Color</string>
+     <string>Color 1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="okButton">
@@ -51,9 +51,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>486</x>
-      <y>100</y>
-      <width>261</width>
+      <x>20</x>
+      <y>200</y>
+      <width>221</width>
       <height>18</height>
      </rect>
     </property>
@@ -65,7 +65,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>530</y>
+      <y>350</y>
       <width>81</width>
       <height>18</height>
      </rect>
@@ -130,9 +130,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>130</y>
-      <width>350</width>
-      <height>391</height>
+      <y>100</y>
+      <width>761</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -145,8 +145,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>100</y>
+      <x>20</x>
+      <y>80</y>
       <width>121</width>
       <height>18</height>
      </rect>
@@ -158,9 +158,77 @@
    <widget class="QTextEdit" name="colorResult">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>340</y>
-      <width>350</width>
+      <x>20</x>
+      <y>370</y>
+      <width>241</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightgray</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="colorButton_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>220</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(46, 204, 113); border: none;</string>
+    </property>
+    <property name="text">
+     <string>Color 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="colorButton_3">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>220</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(46, 204, 113); border: none;</string>
+    </property>
+    <property name="text">
+     <string>Color 3</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="colorResult_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>370</y>
+      <width>241</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightgray</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="colorResult_3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>370</y>
+      <width>241</width>
       <height>181</height>
      </rect>
     </property>
@@ -175,7 +243,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
