@@ -3,39 +3,6 @@
 import re
 from pprint import pprint
 
-INPUT = "colors.csv"
-
-def extract_rgb_values(rgb_str):
-    m = re.search(r"rgb\((.*),(.*),(.*)\)", rgb_str)
-    if m:
-        r = int(m.group(1))
-        g = int(m.group(2))
-        b = int(m.group(3))
-        return (r, g, b)
-    else:
-        return None
-
-def read_file(fname):
-    with open(fname) as f:
-        lines = f.read().splitlines()
-
-    d = {}
-    header = [part.strip() for part in lines[0].split(";")]
-    # print(header)
-    for line in lines[1:]:
-        (xterm_number, xterm_name, hex_str, rgb_str, hsl_str) = [part.strip() for part in line.split(";")]
-        # print(xterm_number, xterm_name, hex_str, rgb_str, hsl_str)
-        d[int(xterm_number)] = {
-            'xterm_number': xterm_number,
-            'xterm_name': xterm_name,
-            'hex_str': hex_str,
-            'rgb_str': rgb_str,
-            'rgb_values': extract_rgb_values(rgb_str),
-            'hsl_str': hsl_str
-        }
-    #
-    return d
-
 
 def distance(p1, p2):
     a = abs(p1[0] - p2[0])
@@ -57,13 +24,20 @@ def find_closest(d, rgb_tuple):
         # print(dist)
         # print("=" * 78)
     #
-    closest = min(li, key=lambda e: e['rgb_dist'])
-    return closest
+    
+    newli = sorted(li, key = lambda e:e['rgb_dist'])
+    
+    
+    closest = newli[0];
+    second= newli[1]
+    third = newli[2]
+    
+    return (closest,second,third)
 
 
 def find_closest_color(rgb_tuple):
-    d = read_file(INPUT)
-    # pprint(d)
+    #d = read_file(INPUT)
+    #pprint(d)
     return find_closest(d, rgb_tuple)
 
 ##############################################################################
