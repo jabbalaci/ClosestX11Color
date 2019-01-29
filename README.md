@@ -1,5 +1,5 @@
-Closest Xterm-256 Color
-=======================
+Closest Xterm-256 Colors
+========================
 
 Find the closest three xterm-256 colors (between 0 and 255) to an HTML hexa color (e.g. #ABCDEF).
 
