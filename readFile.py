@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
 import re
+
 INPUT = "colors.csv"
+
+
 def extract_rgb_values(rgb_str):
     m = re.search(r"rgb\((.*),(.*),(.*)\)", rgb_str)
     if m:

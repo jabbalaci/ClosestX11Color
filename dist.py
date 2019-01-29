@@ -25,14 +25,10 @@ def find_closest(d, rgb_tuple):
         # print("=" * 78)
     #
     
-    newli = sorted(li, key = lambda e:e['rgb_dist'])
+    newli = sorted(li, key=lambda e: e['rgb_dist'])
+    (closest, second, third) = newli[:3]
     
-    
-    closest = newli[0];
-    second= newli[1]
-    third = newli[2]
-    
-    return (closest,second,third)
+    return (closest, second, third)
 
 
 def find_closest_color(rgb_tuple):

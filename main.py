@@ -2,9 +2,9 @@
 
 """
 Input: an arbitrary HTML hexa code color.
-Output: the closest X11 color from the range 0 .. 255 (included).
+Output: the closest three X11 colors from the range 0 .. 255 (included).
 
-Author: Laszlo Szathmary (jabba.laci@gmail.com), 2018
+Author: Laszlo Szathmary (jabba.laci@gmail.com), 2018--2019
 GitHub: https://github.com/jabbalaci/ClosestX11Color
 """
 
@@ -16,8 +16,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QPushButton
 
 import dist
 import helper
-import showMainGui
 import readFile
+import showMainGui
 
 
 class Main(QMainWindow, showMainGui.Ui_MainWindow):
@@ -51,7 +51,7 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         # else, if valid hex value was given
         self.messageLabel.setText("")
         (r, g, b) = helper.hex_to_rgb(hex_value)
-        (closest,second,third) = dist.find_closest(self.d,(r, g, b))
+        (closest, second, third) = dist.find_closest(self.d, (r, g, b))
         xterm_number = closest['xterm_number']
         # print(closest)
         btn_text_color = "white" if int(xterm_number) in self.whites else "black"

@@ -11,16 +11,16 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Closest Xterm-256 Color</string>
+   <string>Closest Xterm-256 Colors</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="colorButton">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>220</y>
+      <y>230</y>
       <width>221</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -58,14 +58,14 @@
      </rect>
     </property>
     <property name="text">
-     <string>Closest xterm-256 color (0..255):</string>
+     <string>Closest xterm-256 colors:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>350</y>
+      <y>530</y>
       <width>81</width>
       <height>18</height>
      </rect>
@@ -77,9 +77,9 @@
    <widget class="QLabel" name="messageLabel">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>100</x>
       <y>530</y>
-      <width>671</width>
+      <width>681</width>
       <height>20</height>
      </rect>
     </property>
@@ -159,9 +159,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>370</y>
+      <y>350</y>
       <width>241</width>
-      <height>181</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -172,9 +172,9 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>220</y>
+      <y>230</y>
       <width>221</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -193,9 +193,9 @@
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>220</y>
+      <y>230</y>
       <width>221</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -214,9 +214,9 @@
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>370</y>
+      <y>350</y>
       <width>241</width>
-      <height>181</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -227,9 +227,9 @@
     <property name="geometry">
      <rect>
       <x>540</x>
-      <y>370</y>
+      <y>350</y>
       <width>241</width>
-      <height>181</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -243,7 +243,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
