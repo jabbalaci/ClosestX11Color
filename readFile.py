@@ -1,5 +1,7 @@
 import re
 
+from pyrsistent import freeze
+
 INPUT = "colors.csv"
 
 
@@ -33,4 +35,4 @@ def read_file():
             'hsl_str': hsl_str
         }
     #
-    return d
+    return freeze(d)

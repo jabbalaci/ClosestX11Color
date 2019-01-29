@@ -62,7 +62,7 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         self.colorButton.setStyleSheet(f"background-color: {result}; color: {btn_text_color}; border: none;");
         self.colorButton.setText(xterm_number)
         text = ""
-        for k, v in closest.items():
+        for k, v in sorted(closest.items(), reverse=True):
             text += (f"<b>{k}:</b> {v}<br>")
         self.colorResult.setText(text)
 
@@ -73,7 +73,7 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         self.colorButton_2.setStyleSheet(f"background-color: {result}; color:{btn_text_color};border: none;");
         self.colorButton_2.setText(xterm_number);
         text = ""
-        for k, v in second.items():
+        for k, v in sorted(second.items(), reverse=True):
             text += (f"<b>{k}:</b> {v}<br>")
         self.colorResult_2.setText(text)
     
@@ -84,7 +84,7 @@ class Main(QMainWindow, showMainGui.Ui_MainWindow):
         self.colorButton_3.setStyleSheet(f"background-color: {result}; color:{btn_text_color};border: none;");
         self.colorButton_3.setText(xterm_number);
         text = ""
-        for k, v in third.items():
+        for k, v in sorted(third.items(), reverse=True):
             text += (f"<b>{k}:</b> {v}<br>")
         self.colorResult_3.setText(text)
 

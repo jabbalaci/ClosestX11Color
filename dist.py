@@ -8,15 +8,15 @@ def distance(p1, p2):
     a = abs(p1[0] - p2[0])
     b = abs(p1[1] - p2[1])
     c = abs(p1[2] - p2[2])
+
     return a + b + c
 
 
 def find_closest(d, rgb_tuple):
-    copy = d.copy()
     li = []
-    for k, v in copy.items():
+    for k, v in d.items():
         dist = distance(v['rgb_values'], rgb_tuple)
-        v['rgb_dist'] = dist
+        v = v.set('rgb_dist', dist)
         li.append(v)
         # print(k)
         # print(v)

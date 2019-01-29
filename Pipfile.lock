@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fe82a88dd1a2bba3bc58365e51c005933800addb2a062df351b2453be0c9d338"
+            "sha256": "35665a0afd8bd1bf55cda46018eb6cefdb41de39324831c7064e0fa0948f99d4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -15,7 +15,22 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "pyrsistent": {
+            "hashes": [
+                "sha256:5a3827d57ad3e46820e5ee4ed5b9e0ee7bc4686df6634a7368bc1863a5c48a77"
+            ],
+            "index": "pypi",
+            "version": "==0.14.9"
+        },
+        "six": {
+            "hashes": [
+                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
+                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+            ],
+            "version": "==1.12.0"
+        }
+    },
     "develop": {
         "pyqt5": {
             "hashes": [
