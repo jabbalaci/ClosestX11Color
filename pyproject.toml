@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "closestx11color"
+version = "0.1.0"
+description = ""
+authors = ["Jabba Laci <jabba.laci@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyqt5 = "^5.15.7"
+pyrsistent = "^0.19.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
